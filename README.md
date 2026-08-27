@@ -1,5 +1,5 @@
-# python-numpy-pandas-practice
-A collection of Python practice exercises focused on NumPy, Pandas, data analysis, numerical methods, and data manipulation.
+# Python NumPy & Pandas Practice
+
 This repository contains my Python practice exercises focused on NumPy and Pandas.
 
 ## Topics Covered
