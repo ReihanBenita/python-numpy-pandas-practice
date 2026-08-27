@@ -13,7 +13,7 @@ Technologies:
 - Python
 - NumPy
 
-Author: Reihan
+Author: Reihan(Benita)
 """
 
 import numpy as np
