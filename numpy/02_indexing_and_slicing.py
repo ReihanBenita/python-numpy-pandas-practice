@@ -1,44 +1,69 @@
-#Numpy Indexing and Slicing 
-#1
-import numpy as np
-arr = np.arange(1, 17).reshape(4, 4) 
-print('First row:', arr[0, :]) 
-print('Last column:', arr[:, -1]) 
-print('2×2 submatrix:', arr[1:3, 1:3]) 
-print("______________________________________________________________")
-###################----------------------------
-#Numpy Indexing and Slicing 
-#2
+"""
+NumPy Indexing and Slicing Practice
+
+This file contains practice exercises focused on indexing, slicing,
+Boolean indexing, flattening, and reshaping NumPy arrays.
+
+Topics covered:
+1. Accessing rows, columns, and submatrices using indexing and slicing.
+2. Using Boolean indexing to modify specific array elements.
+3. Flattening and reshaping multidimensional arrays.
+
+Technologies:
+- Python
+- NumPy
+
+Author: Reihan(Benita)
+"""
+
 import numpy as np
 
-ar = np.arange(1, 16)
+
+# --------------------------------------------------
+# Exercise 1: Indexing and Slicing a 4x4 Matrix
+# --------------------------------------------------
+
+arr = np.arange(1, 17).reshape(4, 4)
+
+print("First row:", arr[0, :])
+print("Last column:", arr[:, -1])
+print("2x2 submatrix:", arr[1:3, 1:3])
+
+
+# --------------------------------------------------
+# Exercise 2: Boolean Indexing and Modifying Odd Values
+# --------------------------------------------------
+
+arr = np.arange(1, 16)
+
 print("Original array:")
-print(ar)
+print(arr)
 
-ar[ar % 2 != 0] = -1
+arr[arr % 2 != 0] = -1
+
 print("\nModified array:")
-print(ar)
-print("______________________________________________________________")
-###################----------------------------
-#Numpy Indexing and Slicing 
-#3
-import numpy as np
-
-A = np.array([[1, 2, 3],
-              [4, 5, 6],
-              [7, 8, 9]])
-
-print("Original 3×3 matrix:")
-print(A)
+print(arr)
 
 
-flat = A.flatten()
+# --------------------------------------------------
+# Exercise 3: Flattening and Reshaping a Matrix
+# --------------------------------------------------
+
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print("Original 3x3 matrix:")
+print(matrix)
+
+flat = matrix.flatten()
+
 print("\nFlattened array:")
 print(flat)
 
-
 reshaped = flat.reshape(3, 3)
-print("\nReshaped 3×3 matrix:")
+
+print("\nReshaped 3x3 matrix:")
 print(reshaped)
-print("______________________________________________________________")
-###################----------------------------
