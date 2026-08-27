@@ -1,3 +1,16 @@
+"""
+NumPy Basics
+
+This file contains practice exercises covering fundamental NumPy concepts.
+
+Topics may include:
+- Creating arrays
+- Array properties
+- Basic operations
+- Mathematical functions
+
+Author: Reihan(Benita)
+"""
 #Numpy
 #1
 
@@ -10,7 +23,7 @@ odd = arr[arr % 2 != 0]
 print("Even Numbers:", even)
 print("Odd Numbers:", odd)
 
-###############----------------------------------
+#----------------------------------
 #2
 #Numpy
 import numpy as np
@@ -31,8 +44,7 @@ print(I)
 print("\n Product of matrices:")
 print(result)
 print("\n Is the product equal to A? ", is_equal)
-print("______________________________________________________________")
-#####################------------------------------
+#------------------------------
 #3
 #numpy
 import numpy as np
@@ -54,8 +66,7 @@ print("Minimum value per row:", min_rows)
 
 print("\n Maximum value of each column:", max_cols)
 print("Minimum value of each column:", min_cols)
-print("______________________________________________________________")
-#################-----------------------------------------------------
+#-----------------------------------------------------
 #4
 #numpy
 import numpy as np
@@ -63,5 +74,4 @@ import numpy as np
 
 arr = np.linspace(0, 1, 10)
 print(arr)
-print("______________________________________________________________")
-##############-------------------
+#-------------------
